@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator UI</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./calculator.html"> Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="t-cal">Table calculator</h2>
+            <table class="table-calculator">
+                <thead>
+                    <tr>
+                        <th colspan="4"><input type="text" name="text" value="0" id="text"></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td colspan="2"><input type="button" name="clear" value="C"></td>
+                        <td><input type="button" name="modulus" value="%"></td>
+                        <td><input type="button" name="division" value="/"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" name="seven" value="7"></td>
+                        <td><input type="button" name="eight" value="8"></td>
+                        <td><input type="button" name="nine" value="9"></td>
+                        <td><input type="button" name="operator" value="*"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" name="four" value="4"></td>
+                        <td><input type="button" name="five" value="5"></td>
+                        <td><input type="button" name="six" value="6"></td>
+                        <td><input type="button" name="operator" value="-"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" name="one" value="1"></td>
+                        <td><input type="button" name="two" value="2"></td>
+                        <td><input type="button" name="three" value="3"></td>
+                        <td><input type="button" name="operator" value="+"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><input type="button" name="zero" value="0"></td>
+                        <td><input type="button" name="dot" value="."></td>
+                        <td><input type="button" name="equalto" value="="></td>
+                    </tr>
+                </tbody>
+            </table>
+    
+
+
+        <h2 class="t-cal">Flex calculator</h2>
+        <div class="flex-calculator">
+            <input type="text" name="number" id="number" class="number" value="0">
+
+            <div class="total">
+            <div class="row-1">
+                <div class="stretch"><input type="button" name="clear" value="C"></div>
+                <div class="normal"><input type="button" name="modulus" value="%"></div>
+                <div class="normal"><input type="button" name="division" value="/"></div>
+            </div>
+
+            <div class="row-2">
+                <div><input type="button" name="seven" value="7"></div>
+                <div><input type="button" name="eight" value="8"></div>
+                <div><input type="button" name="nine" value="9"></div>
+                <div><input type="button" name="operator" value="*"></div>
+            </div>
+
+            <div class="row-3">
+                <div><input type="button" name="four" value="4"></div>
+                <div><input type="button" name="five" value="5"></div>
+                <div><input type="button" name="six" value="6"></div>
+                <div><input type="button" name="operator" value="-"></div>
+            </div>
+
+            <div class="row-4">
+                <div><input type="button" name="one" value="1"></div>
+                <div><input type="button" name="two" value="2"></div>
+                <div><input type="button" name="three" value="3"></div>
+                <div><input type="button" name="operator" value="+"></div>
+            </div>
+
+            <div class="row-5">
+                <div class="stretch"><input type="button" name="zero" value="0"></div>
+                <div class="normal"><input type="button" name="dot" value="."></div>
+                <div class="normal"><input type="button" name="equalto" value="="></div>
+            </div>
+            </div>
+        </div>
+
+
+        </main>
+
+        <footer>
+            <div class="footer">
+                <p> &copy; Copyright 2022 God'sFavour Omoare</p>
+            </div>
+        </footer>
+        
+    
+</body>
+</html>

@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, rgb(27, 23, 23, .8), rgb(51, 51, 51, .8)), url('code.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: 0.8rem;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    color: #c1c1eb;
+}
+
+nav ul li a:active {
+    color: #cec9c9;
+}
+
+/* exclusive for about me page */
+
+header div {
+    text-align: center;
+}
+
+header div img {
+    width: 200px;
+    max-width: 100%;
+    border-radius: 100px;
+    padding: 30px 0 20px;
+}
+
+header div h2 {
+    color: #c1c1eb;
+    padding-bottom: 7px;
+}
+
+header div p {
+    padding-bottom: 30px;
+}
+
+main {
+    line-height: 30px;
+}
+
+main article {
+    padding: 20px 15px;
+    text-align: center;
+}
+
+main h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+main .goal,
+main .education_certificates .certificates, 
+main .hobbies{
+    background-color: #c1c1eb;
+}
+
+main section {
+    padding: 20px 15px;
+}
+
+main .education_certificates .school,
+main .education_certificates span,
+main .experience .li_1 {
+    font-weight: 600;
+}
+
+main ul {
+    padding-left: 15px;
+    list-style-type: disc;
+}
+
+main .experience .li_2 {
+    font-style: italic;
+    display: block;
+}
+
+main .experience .li_3 {
+    display: block;
+}
+
+.footer {
+    padding: 20px 15px;
+    background-color: #000000;
+    color: #c1c1eb;
+    font-size: 0.8rem;
+    text-align: center
+}
+
+/*exclusive for contact page */
+main section h2 {
+    padding: 5px 0 15px;
+}
+
+input, textarea, select {
+    width: 100%;
+    border-radius: 6px;
+    padding: 10px 7px;
+    margin-bottom: 20px;
+    border: 1px solid #cec9c9;
+}
+
+main label {
+    font-weight: 600;
+}
+
+main button {
+    width: 100%;
+    border-radius: 6px;
+    padding: 10px 7px;
+    color: #000000;
+    border: 1px solid #c1c1eb;
+    background-color: #c1c1eb;
+}
+
+
+/*exclusive for calculator */
+.t-cal {
+    text-align: center;
+    padding: 15px;
+}
+/* tablecalculator */
+.table-calculator {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color:  #808080;
+    border: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 250px;
+}
+
+#text {
+    text-align: right;
+    border-radius: 0px;
+    background-color: #c1c1eb;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+input[type=button]:active {
+    background-color: #f38a8a;
+}
+
+
+
+/* flex calculator */
+main .flex-calculator {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color:  #c1c1eb;
+    border: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 250px;
+}
+
+.flex-calculator .number {
+    text-align: right;
+    border-radius: 0px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.total {
+    padding-bottom: 15px;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=button] {
+    border-radius: 0;
+    margin: 0px;
+}
+
+.row-1 .stretch,
+.row-5 .stretch {
+    flex: 50%;
+}
+
+.row-1 .stretch input[type=button] {
+    background-color: #cec9c9;
+}
+
+.row-1 .normal,
+.row-2 div,
+.row-3 div,
+.row-4 div,
+.row-5 .normal {
+    flex: 25%;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+    nav ul li {
+        font-size: 1rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    header .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    header .hero-text {
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .education_certificates {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+
+    main .education_certificates .education,
+    main .education_certificates .certificates {
+        flex: 50%;
+    }
+
+    .experience_hobbies {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .experience_hobbies .experience,
+    main .experience_hobbies .hobbies {
+        flex: 50%;
+    }
+
+    /* for those with forms */
+    .container {
+            background-color: #fff;
+            max-width: 40%;
+            box-shadow: 2px 2px 5px gray ;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 30px 20px 20px;
+            border-radius: 8px;
+    }
+
+    main section {
+        padding: 15px 10px;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+    
+}
